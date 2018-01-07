@@ -117,5 +117,27 @@ for data_file in data_files:
 # 
 # **Question 3a**: Complete the helper functions in the code cells below to address each of the cleaning tasks described above.
 
+# In[3]:
+
+def duration_in_mins(datum, city):
+    """
+    Takes as input a dictionary containing info about a single trip (datum) and
+    its origin city (city) and returns the trip duration in units of minutes.
+    
+    Remember that Washington is in terms of milliseconds while Chicago and NYC
+    are in terms of seconds. 
+    
+    HINT: The csv module reads in all of the data as strings, including numeric
+    values. You will need a function to convert the strings into an appropriate
+    numeric type when making your transformations.
+    see https://docs.python.org/3/library/functions.html
+    """
+    if city == 'NYC' or city == 'Chicago':          # converting seconds to minutes (as 1 min = 60 sec) for cities NYC & Chicago  
+        duration = float (datum['tripduration'])/60
+    else:                                           # converting milliseconds to minutes (as 1 min = 60000 sec ) for Washington
+        duration = float(datum['Duration (ms)'])/60000
+    # YOUR CODE HERE
+    
+    return duration
 
 
