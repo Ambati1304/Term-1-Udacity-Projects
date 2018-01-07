@@ -140,4 +140,14 @@ def duration_in_mins(datum, city):
     
     return duration
 
+# Some tests to check that your code works. There should be no output if all of
+# the assertions pass. The `example_trips` dictionary was obtained from when
+# you printed the first trip from each of the original data files.
+tests = {'NYC': 13.9833,
+         'Chicago': 15.4333,
+         'Washington': 7.1231}
+
+for city in tests:
+    assert abs(duration_in_mins(example_trips[city], city) - tests[city]) < .001
+
 
