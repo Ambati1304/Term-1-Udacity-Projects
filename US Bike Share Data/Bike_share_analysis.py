@@ -164,4 +164,26 @@ def time_of_trip(datum, city):
     see https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
     """
 
+# YOUR CODE HERE
+    ''' used format specifiers for date parsing and converted the obtained datetime object to timetuple
+                            and later on called Month, Hour, weekday from timetuple using tuple keys '''
+    
+    if city=='NYC':          
+        time =datetime.strptime(datum['starttime'],'%m/%d/%Y %H:%M:%S').timetuple()
+        month = time.tm_mon
+        hour = time.tm_hour
+        day_of_week=calendar.day_name[time.tm_wday]
+    elif city=='Chicago':
+        time =datetime.strptime(datum['starttime'],'%m/%d/%Y %H:%M').timetuple()
+        month = time.tm_mon
+        hour = time.tm_hour
+        day_of_week=calendar.day_name[time.tm_wday]
+    else:
+        time =datetime.strptime(datum['Start date'],'%m/%d/%Y %H:%M').timetuple()
+        month = time.tm_mon
+        hour = time.tm_hour
+        day_of_week=calendar.day_name[time.tm_wday]
+    return (month, hour, day_of_week)
+
+
 
