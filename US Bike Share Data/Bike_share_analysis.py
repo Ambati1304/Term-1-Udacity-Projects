@@ -150,4 +150,18 @@ tests = {'NYC': 13.9833,
 for city in tests:
     assert abs(duration_in_mins(example_trips[city], city) - tests[city]) < .001
 
+def time_of_trip(datum, city):
+    import calendar
+    """
+    Takes as input a dictionary containing info about a single trip (datum) and
+    its origin city (city) and returns the month, hour, and day of the week in
+    which the trip was made.
+    
+    Remember that NYC includes seconds, while Washington and Chicago do not.
+    
+    HINT: You should use the datetime module to parse the original date
+    strings into a format that is useful for extracting the desired information.
+    see https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+    """
+
 
