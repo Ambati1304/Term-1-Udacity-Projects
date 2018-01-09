@@ -199,4 +199,28 @@ for city in tests:
 def type_of_user(datum, city):
 
 
+    """
+    Takes as input a dictionary containing info about a single trip (datum) and
+    its origin city (city) and returns the type of system user that made the
+    trip.
+    
+    Remember that Washington has different category names compared to Chicago
+    and NYC. 
+    """
+    
+    '''the type of customer is mentioned differently for different cities (no standerd notaion) for this purpose we give out user type
+    either as Subscriber or Customer for all given cities'''
+    if city =='NYC' or city =='Chicago':
+        if datum['usertype'] =='Subscriber':   
+            user_type = 'Subscriber'
+        else:
+            user_type = 'Customer'
+    if city == 'Washington':
+        if datum['Member Type'] =='Registered':
+            user_type = 'Subscriber'
+        else:
+            user_type = 'Customer'
+    # YOUR CODE HERE
+
+
 return user_type
