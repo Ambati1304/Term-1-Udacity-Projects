@@ -196,4 +196,7 @@ for city in tests:
 
 
 
+def type_of_user(datum, city):
 
+
+return user_type
