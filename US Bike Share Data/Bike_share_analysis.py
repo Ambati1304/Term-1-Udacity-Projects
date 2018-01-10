@@ -222,5 +222,17 @@ def type_of_user(datum, city):
             user_type = 'Customer'
     # YOUR CODE HERE
 
-
 return user_type
+
+# Some tests to check that your code works. There should be no output if all of
+# the assertions pass. The `example_trips` dictionary was obtained from when
+# you printed the first trip from each of the original data files.
+tests = {'NYC': 'Customer',
+         'Chicago': 'Subscriber',
+         'Washington': 'Subscriber'}
+
+for city in tests:
+    assert type_of_user(example_trips[city], city) == tests[city]
+
+
+
