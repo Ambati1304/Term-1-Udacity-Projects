@@ -184,7 +184,6 @@ def time_of_trip(datum, city):
         hour = time.tm_hour
         day_of_week=calendar.day_name[time.tm_wday]
     return (month, hour, day_of_week)
-# Some tests to check that your code works. There should be no output if all of
 # the assertions pass. The `example_trips` dictionary was obtained from when
 # you printed the first trip from each of the original data files.
 tests = {'NYC': (1, 0, 'Friday'),
