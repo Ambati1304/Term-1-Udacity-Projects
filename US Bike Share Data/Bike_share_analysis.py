@@ -235,6 +235,15 @@ for city in tests:
 
 # **Question 3b**: Now, use the helper functions you wrote above to create a condensed data file for each city consisting only of the data fields indicated above. In the `/examples/` folder, you will see an example datafile from the [Bay Area Bike Share](http://www.bayareabikeshare.com/open-data) before and after conversion. Make sure that your output is formatted to be consistent with the example file.
 
+def condense_data(in_file, out_file, city):
+    """
+    This function takes full data from the specified input file
+    and writes the condensed data to a specified output file. The city
+    argument determines how the input file will be parsed.
+    
+    HINT: See the cell below to see how the arguments are structured!
+    """
+
 
 
 
