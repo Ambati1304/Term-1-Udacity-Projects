@@ -233,5 +233,8 @@ tests = {'NYC': 'Customer',
 for city in tests:
     assert type_of_user(example_trips[city], city) == tests[city]
 
+# **Question 3b**: Now, use the helper functions you wrote above to create a condensed data file for each city consisting only of the data fields indicated above. In the `/examples/` folder, you will see an example datafile from the [Bay Area Bike Share](http://www.bayareabikeshare.com/open-data) before and after conversion. Make sure that your output is formatted to be consistent with the example file.
+
+
 
 
