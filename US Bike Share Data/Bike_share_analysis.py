@@ -288,4 +288,6 @@ for city, filenames in city_info.items():
     condense_data(filenames['in_file'], filenames['out_file'], city)
     print_first_point(filenames['out_file'])
 
+**Question 4a**: Which city has the highest number of trips? Which city has the highest proportion of trips made by subscribers? Which city has the highest proportion of trips made by short-term customers?
+
 
