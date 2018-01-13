@@ -290,4 +290,48 @@ for city, filenames in city_info.items():
 
 **Question 4a**: Which city has the highest number of trips? Which city has the highest proportion of trips made by subscribers? Which city has the highest proportion of trips made by short-term customers?
 
+# 
+# **Answer**:
+# <table>
+# <tr>
+# <th> City </th>
+# <th> Subscriber Trips </th>
+# <th> Customer Trips </th>
+# <th> Total </th>
+# <th> Subscriber Proportion </th>
+# <th> Customer Proportion</th>
+# </tr>
+# <tr>
+#     <td>NYC</td>
+#     <td>245896</td>
+#     <td>30902</td>
+#     <td>276798</td>
+#     <td> 0.88 </td>
+#     <td>0.12 </td>
+#   </tr>
+#   
+#  <tr>
+#     <td>Chicago</td>
+#     <td>54982</td>
+#     <td>17149</td>
+#     <td>72131</td>
+#     <td> 0.76 </td>
+#     <td>0.24 </td>
+#   </tr>
+#   
+#   <tr>
+#     <td>Washington</td>
+#     <td>51753</td>
+#     <td>14573</td>
+#     <td>66326</td>
+#     <td> 0.78 </td>
+#     <td>0.22 </td>
+#   </tr>
+# 
+# </table>
+# 
+# > 1) NYC has highest number of Trips <br>
+# > 2) NYC has the highest proportion of Subscriber trips <br> 
+# > 3) Chicago has the highest proportion of Customer (Short_term) trips
+
 
