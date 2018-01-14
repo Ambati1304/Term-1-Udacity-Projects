@@ -363,3 +363,13 @@ def number_of_trips(filename):
         return(n_subscribers, n_customers, n_total)
 
 
+# In[13]:
+
+## Modify this and the previous cell to answer Question 4a. Remember to run ##
+## the function on the cleaned data files you created from Question 3.      ##
+data_files = ['./data/NYC-2016-Summary.csv',
+              './data/Chicago-2016-Summary.csv',
+              './data/Washington-2016-Summary.csv',]
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2])
+    print('Subscribers:',number_of_trips(data_file)[0], 'Customers:',number_of_trips(data_file)[1],'Total:',number_of_trips(data_file)[2])
