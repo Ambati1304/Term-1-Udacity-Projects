@@ -373,3 +373,9 @@ data_files = ['./data/NYC-2016-Summary.csv',
 for data_file in data_files:
     print(data_file.split('-')[0].split('/')[2])
     print('Subscribers:',number_of_trips(data_file)[0], 'Customers:',number_of_trips(data_file)[1],'Total:',number_of_trips(data_file)[2])
+
+# > **Tip**: In order to add additional cells to a notebook, you can use the "Insert Cell Above" and "Insert Cell Below" options from the menu bar above. There is also an icon in the toolbar for adding new cells, with additional icons for moving the cells up and down the document. By default, new cells are of the code type; you can also specify the cell type (e.g. Code or Markdown) of selected cells from the Cell menu or the dropdown in the toolbar.
+# 
+# Now, you will write your own code to continue investigating properties of the data.
+# 
+
