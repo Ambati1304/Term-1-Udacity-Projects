@@ -429,4 +429,19 @@ for data_file in data_files:
 ## into an appropriate numeric type before you aggregate data.          ##
 ## TIP: For the Bay Area example, the average trip length is 14 minutes ##
 ## and 3.5% of trips are longer than 30 minutes.                        ## 
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # findinf city name
+    with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        duration=[]  # list variable to store duration times in city 
+        count =0 # variable to count number of trips that took more than 30 min
+        for i in reader:
+            duration.append(float(i['duration']))
+            if float(i['duration']) > 30:
+                count+=1
+        avg= sum(duration)/len(duration) # finding the average 
+        pro_30 = count/ len(duration) # finding the proportion of rides that are more than 30 min
+        print('Average trip time (minutes)                    :',avg)  #printing results
+        print('Percentage of Rides that are longer than 30 min:', pro_30)
+
 
