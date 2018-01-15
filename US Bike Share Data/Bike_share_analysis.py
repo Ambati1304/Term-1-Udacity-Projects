@@ -419,3 +419,14 @@ for data_file in data_files:
 # <p><b> Washington </b></p>
 # Average trip time (minutes)                    : 18.93287355913721,  
 # Percentage of Rides that are longer than 30 min: 0.10838886711093688
+
+# In[15]:
+
+## Use this and additional cells to answer Question 4b.                 ##
+##                                                                      ##
+## HINT: The csv module reads in all of the data as strings, including  ##
+## numeric values. You will need a function to convert the strings      ##
+## into an appropriate numeric type before you aggregate data.          ##
+## TIP: For the Bay Area example, the average trip length is 14 minutes ##
+## and 3.5% of trips are longer than 30 minutes.                        ## 
+
