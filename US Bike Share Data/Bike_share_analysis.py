@@ -379,7 +379,7 @@ for data_file in data_files:
 # Now, you will write your own code to continue investigating properties of the data.
 # 
 
-# **Question 4b**: Bike-share systems are designed for riders to take short trips. Most of the time, users are allowed to take trips of 30 minutes or less with no additional charges, with overage charges made for trips of longer than that duration. What is the average trip length for each city? What proportion of rides made in each city are longer than 30 minutes?
+# **Question 4b**: Bike-share systems are designed for riders to #take short trips. Most of the time, users are allowed to take #trips of 30 minutes or less with no additional charges, with #overage charges made for trips of longer than that duration. What #is the average trip length for each city? What proportion of #rides made in each city are longer than 30 minutes?
 
 # 
 # **Answer**: 
@@ -409,7 +409,7 @@ for data_file in data_files:
 #   </tr>
 # 
 # </table>
-# 
+
 # <p><b>NYC </b></p>
 # Average trip time (minutes)                    : 15.81259299802294,  
 # Percentage of Rides that are longer than 30 min: 0.07302437156337835.   
