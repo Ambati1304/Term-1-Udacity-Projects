@@ -380,3 +380,42 @@ for data_file in data_files:
 # 
 
 # **Question 4b**: Bike-share systems are designed for riders to take short trips. Most of the time, users are allowed to take trips of 30 minutes or less with no additional charges, with overage charges made for trips of longer than that duration. What is the average trip length for each city? What proportion of rides made in each city are longer than 30 minutes?
+
+# 
+# **Answer**: 
+# 
+# <table>
+# <tr>
+# <th> City </th>
+# <th> Average trip time (minutes) </th>
+# <th> Percentage of Rides that are longer than 30 min </th>
+# </tr>
+# <tr>
+#     <td>NYC</td>
+#     <td>15.81</td>
+#     <td>0.07</td>
+#   </tr>
+#   
+#  <tr>
+#     <td>Chicago</td>
+#     <td>16.56</td>
+#     <td>0.08</td>
+#   </tr>
+#   
+#   <tr>
+#     <td>Washington</td>
+#     <td>18.93</td>
+#     <td>0.18</td>
+#   </tr>
+# 
+# </table>
+# 
+# <p><b>NYC </b></p>
+# Average trip time (minutes)                    : 15.81259299802294,  
+# Percentage of Rides that are longer than 30 min: 0.07302437156337835.   
+# <p><b> Chicago</b></p>
+# Average trip time (minutes)                    : 16.563629368787335,  
+# Percentage of Rides that are longer than 30 min: 0.08332062497400562.    
+# <p><b> Washington </b></p>
+# Average trip time (minutes)                    : 18.93287355913721,  
+# Percentage of Rides that are longer than 30 min: 0.10838886711093688
