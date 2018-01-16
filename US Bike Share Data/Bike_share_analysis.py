@@ -444,4 +444,5 @@ for data_file in data_files:
         print('Average trip time (minutes)                    :',avg)  #printing results
         print('Percentage of Rides that are longer than 30 min:', pro_30)
 
+# **Question 4c**: Dig deeper into the question of trip duration based on ridership. Choose one city. Within that city, which type of user takes longer rides on average: Subscribers or Customers?
 
