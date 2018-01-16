@@ -473,3 +473,35 @@ for data_file in data_files:
         print('Average trip for Customers  :', avg_cus)
         print ('relative_difference        :', avg_cus-avg_sub)
 
+# 
+# **Answer**: 
+# <table>
+# <tr>
+# <th> City </th>
+# <th> Average trip time for Subscribers </th>
+# <th>Average trip time for Customers </th>
+# <th>Difference in Avg times </th>
+# </tr>
+# <tr>
+#     <td>NYC</td>
+#     <td>13.68</td>
+#     <td>32.77</td>
+#     <td>19.09 </td>
+#   </tr>
+#   
+#  <tr>
+#     <td>Chicago</td>
+#     <td>12.06</td>
+#     <td>30.97</td>
+#     <td>18.91 </td>
+#   </tr>
+#   
+#   <tr>
+#     <td>Washington</td>
+#     <td>12.52</td>
+#     <td>41.67</td>
+#     <td>29.14 </td>
+#   </tr>
+# 
+# </table>
+
