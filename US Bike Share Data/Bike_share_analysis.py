@@ -456,4 +456,20 @@ for data_file in data_files:
 ## Subscriber trip duration to be 9.5 minutes and the average Customer ##
 ## trip duration to be 54.6 minutes. Do the other cities have this     ##
 ## level of difference?                                                ##
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # findinf city name
+    with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        customer_duration=[]
+        subscriber_duration=[]
+        for i in reader :
+            if i['user_type'] == 'Subscriber':   # appending the duration where the user_type is Subscribers 
+                subscriber_duration.append(float(i['duration']))
+            else :
+                customer_duration.append(float(i['duration'])) # appending the duration where the user_type is Customers 
+        avg_sub= sum(subscriber_duration)/len(subscriber_duration)
+        avg_cus=sum(customer_duration)/len(customer_duration)
+        print('Average trip for Subscribers:', avg_sub)
+        print('Average trip for Customers  :', avg_cus)
+        print ('relative_difference        :', avg_cus-avg_sub)
 
