@@ -505,3 +505,19 @@ for data_file in data_files:
 # 
 # </table>
 
+# 
+# <p><b>NYC</b> </p>
+# Average trip time for Subscribers: 13.680790523907177, <br>
+# Average trip time for Customers  : 32.77595139473187. <br>
+# Difference in Avg times for Sunscribers & Customers : 19.095160870824692<br>
+# <p><b> Chicago</b></p>
+# Average trip time for Subscribers: 12.067201690250076,  <br>
+# Average trip time for Customers  : 30.979781133982506. <br>
+# Difference in Avg times for Sunscribers & Customers : 18.91257944373243<br>
+# <p><b> Washington</b> </p>
+# Average trip time for Subscribers: 12.528120499294745,  <br>
+# Average trip time for Customers  : 41.67803139252976. <br>
+# Difference in Avg times for Sunscribers & Customers :  29.149910893235017<br>
+# ##### Observation
+# <p> we notice that in every city the average trip time for Customers are longer than the Subscribers. 
+
