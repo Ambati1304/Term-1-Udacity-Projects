@@ -446,3 +446,14 @@ for data_file in data_files:
 
 # **Question 4c**: Dig deeper into the question of trip duration based on ridership. Choose one city. Within that city, which type of user takes longer rides on average: Subscribers or Customers?
 
+# In[16]:
+
+## Use this and additional cells to answer Question 4c. If you have    ##
+## not done so yet, consider revising some of your previous code to    ##
+## make use of functions for reusability.                              ##
+##                                                                     ##
+## TIP: For the Bay Area example data, you should find the average     ##
+## Subscriber trip duration to be 9.5 minutes and the average Customer ##
+## trip duration to be 54.6 minutes. Do the other cities have this     ##
+## level of difference?                                                ##
+
