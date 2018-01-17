@@ -547,4 +547,7 @@ plt.title('Distribution of Trip Durations')
 plt.xlabel('Duration (m)')
 plt.show()
 
+# In the above cell, we collected fifty trip times in a list, and passed this list as the first argument to the `.hist()` function. This function performs the computations and creates plotting objects for generating a histogram, but the plot is actually not rendered until the `.show()` function is executed. The `.title()` and `.xlabel()` functions provide some labeling for plot context.
+# 
+
 
