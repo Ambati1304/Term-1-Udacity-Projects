@@ -526,5 +526,25 @@ for data_file in data_files:
 # 
 # The last set of values that you computed should have pulled up an interesting result. While the mean trip time for Subscribers is well under 30 minutes, the mean trip time for Customers is actually _above_ 30 minutes! It will be interesting for us to look at how the trip times are distributed. In order to do this, a new library will be introduced here, `matplotlib`. Run the cell below to load the library and to generate an example plot.
 
+# In[12]:
+
+# load library
+import matplotlib.pyplot as plt
+
+# this is a 'magic word' that allows for plots to be displayed
+# inline with the notebook. If you want to know more, see:
+# http://ipython.readthedocs.io/en/stable/interactive/magics.html
+get_ipython().magic('matplotlib inline')
+
+# example histogram, data taken from bay area sample
+data = [ 7.65,  8.92,  7.42,  5.50, 16.17,  4.20,  8.98,  9.62, 11.48, 14.33,
+        19.02, 21.53,  3.90,  7.97,  2.62,  2.67,  3.08, 14.40, 12.90,  7.83,
+        25.12,  8.30,  4.93, 12.43, 10.60,  6.17, 10.88,  4.78, 15.15,  3.53,
+         9.43, 13.32, 11.72,  9.85,  5.22, 15.10,  3.95,  3.17,  8.78,  1.88,
+         4.55, 12.68, 12.38,  9.78,  7.63,  6.45, 17.38, 11.90, 11.52,  8.63,]
+plt.hist(data)
+plt.title('Distribution of Trip Durations')
+plt.xlabel('Duration (m)')
+plt.show()
 
 
