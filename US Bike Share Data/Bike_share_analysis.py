@@ -521,3 +521,10 @@ for data_file in data_files:
 # ##### Observation
 # <p> we notice that in every city the average trip time for Customers are longer than the Subscribers. 
 
+# <a id='visualizations'></a>
+# ### Visualizations
+# 
+# The last set of values that you computed should have pulled up an interesting result. While the mean trip time for Subscribers is well under 30 minutes, the mean trip time for Customers is actually _above_ 30 minutes! It will be interesting for us to look at how the trip times are distributed. In order to do this, a new library will be introduced here, `matplotlib`. Run the cell below to load the library and to generate an example plot.
+
+
+
