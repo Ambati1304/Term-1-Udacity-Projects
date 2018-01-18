@@ -551,4 +551,15 @@ plt.show()
 # 
 # You will now use these functions to create a histogram of the #trip times for the city you selected in question 4c. Don't #separate the Subscribers and Customers for now: just collect all #of the trip times and plot them.
 
+# In[13]:
+
+## Use this and additional cells to collect all of the trip times as a list ##
+## and then use pyplot functions to generate a histogram of trip times.     ##
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # findinf city name
+    with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        duration=[]  # list variable to store duration times in city 
 
