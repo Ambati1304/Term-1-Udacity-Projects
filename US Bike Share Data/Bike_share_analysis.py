@@ -562,4 +562,11 @@ for data_file in data_files:
     with open (data_file,'r') as city_data: 
         reader = csv.DictReader(city_data)
         duration=[]  # list variable to store duration times in city 
+count =0 # variable to count number of trips that took more than 30 min
+        for i in reader:
+            duration.append(float(i['duration']))
+        plt.hist(duration)
+        plt.title('Distribution of Trip Durations')
+        plt.xlabel('Duration (m)')
+        plt.show()
 
