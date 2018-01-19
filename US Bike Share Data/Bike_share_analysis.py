@@ -579,5 +579,8 @@ count =0 # variable to count number of trips that took more than 30 min
 # <p> <b> NYC Bike_Share Distribution: </b> </p>
 # 1) Subscribers has more data concentrated between 5 min and 10 min,after that there is a steady decrease for people of longer trips <br>
 # 2) Customers has peak at 20 min , more data is concentrated between 15 min to 30 min, there is a steady increase in customers using bikes for 20 min trips, after that there is a steady decrease for people on longer trips <br>
-
+# 
+# <p><b> Chicago Bike_Share Distribution:  </b></p>
+# 1) Subscribers has peak located betweeen 5 to 10 min, after that ther is a decrease in number of people using bike for longer trips <br>
+# 2) Customers has peak located between 20 to 25 min, there is a decrese in people who use bikes for longer trips
 
