@@ -574,3 +574,10 @@ count =0 # variable to count number of trips that took more than 30 min
 
 # **Question 5**: Use the parameters of the `.hist()` function to #plot the distribution of trip times for the Subscribers in your #selected city. Do the same thing for only the Customers. Add #limits to the plots so that only trips of duration less than 75 #minutes are plotted. As a bonus, set the plots up so that bars #are in five-minute wide intervals. For each group, where is the #peak of each distribution? How would you describe the shape of #each distribution?
 
+# **Answer**: 
+# 
+# <p> <b> NYC Bike_Share Distribution: </b> </p>
+# 1) Subscribers has more data concentrated between 5 min and 10 min,after that there is a steady decrease for people of longer trips <br>
+# 2) Customers has peak at 20 min , more data is concentrated between 15 min to 30 min, there is a steady increase in customers using bikes for 20 min trips, after that there is a steady decrease for people on longer trips <br>
+
+
