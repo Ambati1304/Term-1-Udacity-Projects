@@ -590,3 +590,32 @@ count =0 # variable to count number of trips that took more than 30 min
 # 
 # 
 
+# In[18]:
+
+## Use this and additional cells to answer Question 5. ##
+
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # findinf city name
+    with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        customer_duration=[]
+        subscriber_duration=[]
+        for i in reader :
+            if i['user_type'] == 'Subscriber':   # appending the duration where the user_type is Subscribers 
+                subscriber_duration.append(float(i['duration']))
+            else :
+                customer_duration.append(float(i['duration']))
+        plt.hist(subscriber_duration,range= (0,75),bins= 15,histtype='barstacked') # No. of bins = range/bin_width
+        plt.axvline(sum(subscriber_duration)/float(len(subscriber_duration)), color='b', linestyle='dashed', linewidth=2)
+        plt.title('Distribution of Trip Durations (Subscribers)')                  # range = 75, bin_width = 5
+        plt.xlabel('Duration (min)')
+        plt.ylabel('# of Customers')
+        plt.show()
+        plt.hist(customer_duration,range= (0,75),bins =15)
+        plt.axvline(sum(customer_duration)/float(len(customer_duration)), color='b', linestyle='dashed', linewidth=2)
+        plt.title('Distribution of Trip Durations (Customers)')
+        plt.xlabel('Duration (min)')
+        plt.ylabel('# of Subscribers')
+        plt.show()
