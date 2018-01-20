@@ -619,3 +619,8 @@ for data_file in data_files:
         plt.xlabel('Duration (min)')
         plt.ylabel('# of Subscribers')
         plt.show()
+
+# <a id='eda_continued'></a>
+# ## Performing Your Own Analysis
+# 
+# So far, you've performed an initial exploration into the data available. You have compared the relative volume of trips made between three U.S. cities and the ratio of trips made by Subscribers and Customers. For one of these cities, you have investigated differences between Subscribers and Customers in terms of how long a typical trip lasts. Now it is your turn to continue the exploration in a direction that you choose. Here are a few suggestions for questions to explore:
