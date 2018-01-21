@@ -673,3 +673,28 @@ trip_duration_sub[w].append(float(i['duration']))
         for w in week :
             avg_trip_sub[w].append(sum(trip_duration_sub[w])/len(trip_duration_sub[w]))
             avg_trip_cus[w].append(sum(trip_duration_cus[w])/len(trip_duration_cus[w]))
+#print('Subscriber week data',avg_trip_sub)
+        #print('Customer week data', avg_trip_cus)
+        for i in avg_trip_sub.values():
+            avg_sub.append(i[0])
+        for i in avg_trip_cus.values():
+            avg_cus.append(i[0])
+    # plot bar graph    
+        bar1 = plt.bar(index, avg_sub,bar_width,
+                 alpha=opacity,
+                 color='b',
+                 label='Subscriber_Avg_time' )
+        bar2 = plt.bar(index+bar_width,avg_cus,bar_width,
+                 alpha=opacity,
+                 color='r',
+                 label='Customer_Avg_time' )
+        plt.xlabel('Days')
+        plt.ylabel('Avg_time')
+        plt.title('Average Trip Time by Day')
+        plt.xticks(index+bar_width/2,week)
+        plt.legend()
+
+        plt.tight_layout()
+
+        plt.show() 
+
