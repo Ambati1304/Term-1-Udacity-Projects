@@ -632,3 +632,13 @@ for data_file in data_files:
 # 
 # If any of the questions you posed in your answer to question 1 align with the bullet points above, this is a good opportunity to investigate one of them. As part of your investigation, you will need to create a visualization. If you want to create something other than a histogram, then you might want to consult the [Pyplot documentation](https://matplotlib.org/devdocs/api/pyplot_summary.html). In particular, if you are plotting values across a categorical variable (e.g. city, user type), a bar chart will be useful. The [documentation page for `.bar()`](https://matplotlib.org/devdocs/api/_as_gen/matplotlib.pyplot.bar.html#matplotlib.pyplot.bar) includes links at the bottom of the page with examples for you to build off of for your own use.
 #
+
+# In[179]:
+
+## Use this and additional cells to continue to explore the dataset. ##
+## Once you have performed your exploration, document your findings  ##
+## in the Markdown cell above.   ##
+
+'''Is the pattern of ridership different on the weekends versus weekdays? 
+On what days are Subscribers most likely to use the system? What about Customers? 
+Does the average duration of rides change depending on the day of the week?'''
