@@ -642,3 +642,15 @@ for data_file in data_files:
 '''Is the pattern of ridership different on the weekends versus weekdays? 
 On what days are Subscribers most likely to use the system? What about Customers? 
 Does the average duration of rides change depending on the day of the week?'''
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+from collections import defaultdict
+import numpy as np
+week = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+fig, ax = plt.subplots()
+n_groups = 7
+index = np.arange (n_groups)
+bar_width = 0.4
+opacity= 0.35
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # finding city name
