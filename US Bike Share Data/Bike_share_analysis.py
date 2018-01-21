@@ -667,3 +667,9 @@ with open (data_file,'r') as city_data:
         for i in reader :
             for w in week : 
                 if bool(i['day_of_week'] == w) & bool(i['user_type'] == 'Subscriber'):
+trip_duration_sub[w].append(float(i['duration']))
+                elif bool(i['day_of_week'] == w) & bool(i['user_type'] == 'Customer'):
+                    trip_duration_cus[w].append(float(i['duration']))
+        for w in week :
+            avg_trip_sub[w].append(sum(trip_duration_sub[w])/len(trip_duration_sub[w]))
+            avg_trip_cus[w].append(sum(trip_duration_cus[w])/len(trip_duration_cus[w]))
