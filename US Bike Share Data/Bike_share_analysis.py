@@ -654,3 +654,16 @@ bar_width = 0.4
 opacity= 0.35
 for data_file in data_files:
     print(data_file.split('-')[0].split('/')[2]) # finding city name
+with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        trip_duration_sub=defaultdict(list)
+        avg_trip_sub=defaultdict(list)
+        trip_duration_cus=defaultdict(list)
+        avg_trip_cus=defaultdict(list)
+        avg_sub=[]
+        avg_cus=[]
+        # for every element we take duration only if particular user and week day is mathced
+        # we use DefaultDict as Special collection where values will be list for a given key
+        for i in reader :
+            for w in week : 
+                if bool(i['day_of_week'] == w) & bool(i['user_type'] == 'Subscriber'):
