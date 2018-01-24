@@ -706,7 +706,63 @@ trip_duration_sub[w].append(float(i['duration']))
 
 '''How does ridership differ by month or season? 
 Which month / season has the highest ridership? 
-Does the ratio of Subscriber trips to Customer trips change depending on the month or season?''' 
+Does the ratio of Subscriber trips to Customer trips change depending on the month or season?'''
+
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+from collections import defaultdict
+import numpy as np
+month = ['1','2','3','4','5','6','7','8','9','10','11','12']
+fig, ax = plt.subplots()
+n_groups = 12
+index = np.arange (n_groups)
+bar_width = 0.4
+opacity= 0.35
+for data_file in data_files:
+    print(data_file.split('-')[0].split('/')[2]) # finding city name
+    with open (data_file,'r') as city_data: 
+        reader = csv.DictReader(city_data)
+        trip_duration_sub=defaultdict(list)
+        avg_trip_sub=defaultdict(list)
+        trip_duration_cus=defaultdict(list)
+        avg_trip_cus=defaultdict(list)
+        avg_sub=[]
+        avg_cus=[]
+        for i in reader :
+            for m in month :
+                if bool(i['month'] == m) & bool(i['user_type'] == 'Subscriber'):
+                    trip_duration_sub[m].append(float(i['duration']))
+                elif bool(i['month'] == m) & bool(i['user_type'] == 'Customer'):
+                    trip_duration_cus[m].append(float(i['duration']))
+        for m in month :
+            avg_trip_sub[m].append(sum(trip_duration_sub[m])/len(trip_duration_sub[m]))
+            avg_trip_cus[m].append(sum(trip_duration_cus[m])/len(trip_duration_cus[m]))
+        #print('Subscriber week data',avg_trip_sub)
+        #print('Customer week data', avg_trip_cus)
+        for i in avg_trip_sub.values():
+            avg_sub.append(i[0])
+        for i in avg_trip_cus.values():
+            avg_cus.append(i[0])
+        
+        bar1 = plt.bar(index, avg_sub,bar_width,
+                 alpha=opacity,
+                 color='b',
+                 label='Subscriber_Avg_time' )
+        bar2 = plt.bar(index+bar_width,avg_cus,bar_width,
+                 alpha=opacity,
+                 color='r',
+                 label='Customer_Avg_time' )
+        plt.xlabel('Months')
+        plt.ylabel('Avg_time')
+        plt.title('Average Trip Time by month')
+        plt.xticks(index+bar_width/2,('jan','feb','Mar','apr','may','jun','jul','aug','sep','oct','nov','dec'))
+        plt.legend()
+
+        plt.tight_layout()
+
+        plt.show() 
+
+ 
 
 
 
