@@ -696,5 +696,19 @@ trip_duration_sub[w].append(float(i['duration']))
 
         plt.tight_layout()
 
-        plt.show() 
+        plt.show()
+
+# In[182]:
+
+## Use this and additional cells to continue to explore the dataset. ##
+## Once you have performed your exploration, document your findings  ##
+## in the Markdown cell above.   ##
+
+'''How does ridership differ by month or season? 
+Which month / season has the highest ridership? 
+Does the ratio of Subscriber trips to Customer trips change depending on the month or season?''' 
+
+
+
+
 
