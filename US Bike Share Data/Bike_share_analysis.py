@@ -769,6 +769,18 @@ for data_file in data_files:
 # 
  
 
+# **Question 7**: Putting the bike share data aside, think of a topic or field of interest where you would like to be able to apply the techniques of data science. What would you like to be able to learn from your chosen subject?
+# 
+# **Answer**: 
+# <p> <b> Clinical data analysis:</b> </p>
+# Data analysis has significant role to play in medical field, right from analysing the mixture of durg and predicting the proper drug dosage based on past avaliable data. By harnessing data we can unleash the power of predcting the disease based on given symptoms.
+# 
+# <p> <b> Product Recommendations for Online shopping:</b> </p>
+# with day to day growth of Online shopping, it is essential that the websites make proper product recommendations based on past purchases, customer demographics etc, by designing a machine learning model
+# 
+# 
+# > **Tip**: If we want to share the results of our analysis with others, we aren't limited to giving them a copy of the jupyter Notebook (.ipynb) file. We can also export the Notebook output in a form that can be opened even for those without Python installed. From the **File** menu in the upper left, go to the **Download as** submenu. You can then choose a different format that can be viewed more generally, such as HTML (.html) or
+# PDF (.pdf). You may need additional packages or software to perform these exports.
 
 
 
