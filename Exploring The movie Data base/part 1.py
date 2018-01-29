@@ -24,3 +24,4 @@ df.info()
 # In[4]:
 
 yearly_stats = df.groupby('release_year').mean().reset_index()
+
