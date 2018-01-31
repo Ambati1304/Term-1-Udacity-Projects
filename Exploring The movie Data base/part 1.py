@@ -66,3 +66,9 @@ plt.plot(yearly_stats['release_year'],yearly_profit)
 plt.xlabel('year')
 plt.ylabel('difference of budget and revenue')
 
+# In[8]:
+
+df['profit'] = np.subtract(df['revenue'],df['budget'])
+
+
+
