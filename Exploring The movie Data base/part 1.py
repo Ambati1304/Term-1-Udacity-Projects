@@ -39,4 +39,19 @@ rects1 = ax.bar(ind, budget_means, width, color='r')
 
 revenue_means = yearly_stats['revenue']
 
+rects2 = ax.bar(ind + width, revenue_means, width, color='y')
+
+# add some text for labels, title and axes ticks
+ax.set_ylabel('Amount in USD')
+ax.set_xlabel('Year')
+ax.set_title('Trend of investment over years')
+
+
+ax.legend((rects1[0], rects2[0]), ('budget', 'revenue'))
+
+
+
+plt.show()
+
+
 
