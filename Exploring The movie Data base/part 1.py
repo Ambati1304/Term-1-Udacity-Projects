@@ -1,3 +1,4 @@
+
 # coding: utf-8
 
 # In[1]:
@@ -52,6 +53,12 @@ ax.legend((rects1[0], rects2[0]), ('budget', 'revenue'))
 
 
 plt.show()
+
+# ## companys most produced genre
+
+# In[6]:
+
+yearly_profit = np.subtract(yearly_stats['revenue'],yearly_stats['budget'])
 
 
 
