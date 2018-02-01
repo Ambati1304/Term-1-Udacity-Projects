@@ -70,5 +70,18 @@ plt.ylabel('difference of budget and revenue')
 
 df['profit'] = np.subtract(df['revenue'],df['budget'])
 
+# In[31]:
+
+df['production_companies']
+
+
+# ## Most number of Genres produced by a Company
+
+# In[32]:
+
+x=df[df['production_companies'] == 'Warner Bros.']['genres'].value_counts()[0:10]
+plt.pie(x,labels=x.index.tolist()); 
+
+
 
 
