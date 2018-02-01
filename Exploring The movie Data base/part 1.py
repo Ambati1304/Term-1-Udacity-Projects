@@ -82,6 +82,10 @@ df['production_companies']
 x=df[df['production_companies'] == 'Warner Bros.']['genres'].value_counts()[0:10]
 plt.pie(x,labels=x.index.tolist()); 
 
+# ## most revenue producing genres for a  production company
+
+# In[11]:
+
 
 
 
