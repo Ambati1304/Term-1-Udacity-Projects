@@ -86,6 +86,8 @@ plt.pie(x,labels=x.index.tolist());
 
 # In[11]:
 
+df.isnull().sum()
+
 
 
 
