@@ -110,5 +110,28 @@ def revenue_genre(company):
     com_gen.sort_values('profit',ascending=False,inplace=True)
     return plt.pie(com_gen['profit'][0:10],labels=com_gen['genres'][0:10]);
 
+# In[33]:
+
+revenue_genre('Universal Studios');
+
+
+# In[34]:
+
+revenue_genre('Paramount Pictures');
+
+
+# In[35]:
+
+revenue_genre('Walt Disney');
+
+
+# In[36]:
+
+revenue_genre('Warner Bros.');
+
+
+# In[ ]:
+
+
 
 
