@@ -102,6 +102,13 @@ df = df.dropna(how='any',axis=0)
 
 df.shape
 
+# In[21]:
+
+def revenue_genre(company):
+    company = df[df['production_companies'] == company]
+    com_gen= company.groupby('genres').mean().reset_index()
+    com_gen.sort_values('profit',ascending=False,inplace=True)
+    return plt.pie(com_gen['profit'][0:10],labels=com_gen['genres'][0:10]);
 
 
 
