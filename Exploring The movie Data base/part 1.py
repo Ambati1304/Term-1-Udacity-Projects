@@ -88,6 +88,20 @@ plt.pie(x,labels=x.index.tolist());
 
 df.isnull().sum()
 
+# In[12]:
+
+df =df.drop(['homepage','keywords','tagline'],axis =1)
+
+
+# In[13]:
+
+df = df.dropna(how='any',axis=0) 
+
+
+# In[14]:
+
+df.shape
+
 
 
 
