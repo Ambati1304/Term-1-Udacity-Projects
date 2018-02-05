@@ -28,6 +28,8 @@ df.shape
 df.columns
 
 
+
+
 # > visuvalizing the head of data
 
 # In[7]:
@@ -52,3 +54,11 @@ df['popularity']= round(df['popularity'])
 # In[10]:
 
 df.head(2)
+
+
+# >Now, value counts of popularity counts looks as.
+
+# In[11]:
+
+df['popularity'].value_counts()
+
