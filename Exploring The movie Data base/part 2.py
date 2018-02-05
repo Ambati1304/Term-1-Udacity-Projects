@@ -73,3 +73,10 @@ df = df[df['popularity'] <= 9.0]
 # In[13]:
 
 df['popularity'].value_counts()
+
+# >We then check for duplicated rows and drop them
+
+# In[14]:
+
+df[df.duplicated()]
+
