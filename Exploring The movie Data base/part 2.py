@@ -80,3 +80,17 @@ df['popularity'].value_counts()
 
 df[df.duplicated()]
 
+# In[15]:
+
+df = df.drop(2090)
+
+
+# In[16]:
+
+df[df.duplicated()]
+
+
+# In[17]:
+
+df.shape
+
