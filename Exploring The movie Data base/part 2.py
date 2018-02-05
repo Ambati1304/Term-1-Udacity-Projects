@@ -62,3 +62,9 @@ df.head(2)
 
 df['popularity'].value_counts()
 
+# >But there are outliers we need popularity on scale 10, so we drop the rows with popularity above 9.0. 
+
+# In[12]:
+
+df = df[df['popularity'] <= 9.0]
+
