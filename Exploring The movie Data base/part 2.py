@@ -68,3 +68,8 @@ df['popularity'].value_counts()
 
 df = df[df['popularity'] <= 9.0]
 
+# >This is how the popularity looks after cleaning.
+
+# In[13]:
+
+df['popularity'].value_counts()
