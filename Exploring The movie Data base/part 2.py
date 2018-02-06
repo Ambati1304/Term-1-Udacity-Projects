@@ -94,3 +94,10 @@ df[df.duplicated()]
 
 df.shape
 
+# >With the following data frame, we have many genres, most of the genres have little movies associated with them, which are trivial for our analyzation, so we filter them out.
+
+# In[18]:
+
+df = df.groupby("genres").filter(lambda x: len(x) >= 50)
+
+
