@@ -106,4 +106,15 @@ df = df.groupby("genres").filter(lambda x: len(x) >= 50)
 
 df.shape
 
+# In[20]:
+
+df['genres'].value_counts()
+
+
+# >We groupby release_year and genres column and take the mean of the popularity column, we use mean over sum, because sum overlooks the importance of genres of little movies but with more popularity, so we take mean of popularity column
+
+# In[21]:
+
+res = df.groupby(['release_year','genres'])['popularity'].mean().reset_index()
+
 
