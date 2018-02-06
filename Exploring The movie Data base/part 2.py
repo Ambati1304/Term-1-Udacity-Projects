@@ -100,4 +100,10 @@ df.shape
 
 df = df.groupby("genres").filter(lambda x: len(x) >= 50)
 
+# >we just used groupby to filter out genre elements whose contents are more than 50, i.e we dropped genres with movies less than 50.
+
+# In[19]:
+
+df.shape
+
 
