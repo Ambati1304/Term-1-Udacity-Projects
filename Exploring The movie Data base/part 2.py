@@ -117,4 +117,13 @@ df['genres'].value_counts()
 
 res = df.groupby(['release_year','genres'])['popularity'].mean().reset_index()
 
+# >We then take the list of all genres with maximum popularity in each year.
+
+# In[22]:
+
+sol = list()
+for year in res['release_year'].unique():
+    sol.append(res.loc[(res[res['release_year']==year]['popularity'].max()==res['popularity']) & (res['release_year']==year)])
+
+
 
