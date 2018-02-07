@@ -125,5 +125,15 @@ sol = list()
 for year in res['release_year'].unique():
     sol.append(res.loc[(res[res['release_year']==year]['popularity'].max()==res['popularity']) & (res['release_year']==year)])
 
+# >Now we define a function to get the most popular genres for a given year.
+
+# In[2]:
+
+def popular_genre(year):
+    for i in range(len(sol)):
+        if all(sol[i]['release_year']==year):
+            return sol[i]['genres'], plt.pie(res[res['release_year']==year]['popularity'],labels= res[res['release_year']==year]['genres']);
+
+
 
 
