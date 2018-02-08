@@ -134,6 +134,12 @@ def popular_genre(year):
         if all(sol[i]['release_year']==year):
             return sol[i]['genres'], plt.pie(res[res['release_year']==year]['popularity'],labels= res[res['release_year']==year]['genres']);
 
+# In[24]:
+
+print(popular_genre(1976));
+
+
+# >So, we give a year to the function and it will give out all the genres according to its popularity in a pie chart.
 
 
 
