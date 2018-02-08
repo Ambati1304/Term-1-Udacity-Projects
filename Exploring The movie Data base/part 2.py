@@ -151,5 +151,12 @@ print(popular_genre(year))
 
 res[res['release_year']==2015]
 
+# In[276]:
+
+plt.pie(res[res['release_year']==2015]['popularity'],labels= res[res['release_year']==2015]['genres']);
+
+
+# In[ ]:
+
 
 
