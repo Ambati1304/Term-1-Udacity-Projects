@@ -141,5 +141,15 @@ print(popular_genre(1976));
 
 # >So, we give a year to the function and it will give out all the genres according to its popularity in a pie chart.
 
+# In[27]:
+
+year = int(input('Enter year for popular genre'))
+print(popular_genre(year))
+
+
+# In[272]:
+
+res[res['release_year']==2015]
+
 
 
