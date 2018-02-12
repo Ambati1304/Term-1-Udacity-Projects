@@ -23,3 +23,15 @@
 # <a id='probability'></a>
 # #### Part I - Probability
 # 
+
+# To get started, let's import our libraries.
+
+# In[1]:
+
+import pandas as pd
+import numpy as np
+import random
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+#We are setting the seed to assure you get the same answers on quizzes as we set up
+random.seed(42)
