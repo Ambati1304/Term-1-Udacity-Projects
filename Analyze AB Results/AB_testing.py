@@ -34,4 +34,4 @@ import random
 import matplotlib.pyplot as plt
 get_ipython().magic('matplotlib inline')
 #We are setting the seed to assure you get the same answers on quizzes as we set up
-random.seed(42)
+random.seed(32)
