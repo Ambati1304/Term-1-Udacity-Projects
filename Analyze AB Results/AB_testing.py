@@ -35,3 +35,13 @@ import matplotlib.pyplot as plt
 get_ipython().magic('matplotlib inline')
 #We are setting the seed to assure you get the same answers on quizzes as we set up
 random.seed(32)
+
+# `1.` Now, read in the `ab_data.csv` data. Store it in `df`.  **Use your dataframe to answer the questions in Quiz 1 of the classroom.**
+# 
+# a. Read in the dataset and take a look at the top few rows here:
+
+# In[2]:
+
+df = pd.read_csv('ab_data.csv')
+df.head(5)
+
