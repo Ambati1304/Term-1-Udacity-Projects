@@ -71,3 +71,8 @@ len(df['user_id'].unique())
 
 df_treatment = df[df['group'] == 'treatment']
 len(df_treatment[df_treatment['landing_page']=='old_page']
+
+# In[7]:
+
+df[((df['group'] == 'treatment') == (df['landing_page'] == 'new_page')) == False].shape[0]
+
