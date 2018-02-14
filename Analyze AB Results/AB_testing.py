@@ -45,3 +45,23 @@ random.seed(32)
 df = pd.read_csv('ab_data.csv')
 df.head(5)
 
+# b. Use the below cell to find the number of rows in the dataset.
+
+# In[3]:
+
+len(df)
+
+
+# c. The number of unique users in the dataset.
+
+# In[4]:
+
+len(df['user_id'].unique())
+
+
+# d. The proportion of users converted.
+
+# In[5]:
+
+100*(len(df[df['converted'] == 1])/len(df))
+
