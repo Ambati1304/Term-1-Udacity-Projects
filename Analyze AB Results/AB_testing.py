@@ -65,3 +65,9 @@ len(df['user_id'].unique())
 
 100*(len(df[df['converted'] == 1])/len(df))
 
+# e. The number of times the `new_page` and `treatment` don't line up.
+
+# In[6]:
+
+df_treatment = df[df['group'] == 'treatment']
+len(df_treatment[df_treatment['landing_page']=='old_page']
