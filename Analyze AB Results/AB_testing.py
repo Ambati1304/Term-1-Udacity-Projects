@@ -76,3 +76,9 @@ len(df_treatment[df_treatment['landing_page']=='old_page']
 
 df[((df['group'] == 'treatment') == (df['landing_page'] == 'new_page')) == False].shape[0]
 
+# f. Do any of the rows have missing values?
+
+# In[8]:
+
+df.info()
+
