@@ -92,6 +92,11 @@ x = df[((df['group'] == 'treatment') == (df['landing_page'] == 'new_page')) == F
 y = x.index.get_values()
 df2 = df.drop(y)
 
+    
+# In[10]:
+
+# Double Check all of the correct rows were removed - this should be 0
+df2[((df2['group'] == 'treatment') == (df2['landing_page'] == 'new_page')) == False].shape[0]
 
     
     
