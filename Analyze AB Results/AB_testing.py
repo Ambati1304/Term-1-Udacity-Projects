@@ -86,7 +86,12 @@ df.info()
     # Use **Quiz 2** in the classroom to provide how we should handle these rows.  
 # # a. Now use the answer to the quiz to create a new dataset that meets the specifications from the quiz.  Store your new dataframe in **df2**.
     
-    
+    # In[9]:
+
+x = df[((df['group'] == 'treatment') == (df['landing_page'] == 'new_page')) == False]
+y = x.index.get_values()
+df2 = df.drop(y)
+
 
     
     
