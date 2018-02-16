@@ -82,3 +82,20 @@ df[((df['group'] == 'treatment') == (df['landing_page'] == 'new_page')) == False
 
 df.info()
 
+# For the rows where **treatment** is not aligned with **new_page** , or **control** is not aligned with **old_page**, we cannot be sure if this row truly received the new or old page.
+    # Use **Quiz 2** in the classroom to provide how we should handle these rows.  
+# # a. Now use the answer to the quiz to create a new dataset that meets the specifications from the quiz.  Store your new dataframe in **df2**.
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
