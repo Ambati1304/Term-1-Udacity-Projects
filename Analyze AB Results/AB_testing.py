@@ -117,7 +117,9 @@ df2[df2['user_id'].duplicated()]
 
 # d. Remove **one** of the rows with a duplicate **user_id**, but keep your dataframe as **df2**.
 
-    
+# In[13]:
+
+df2 = df2.drop(df2[df2['user_id'].duplicated()].index.get_values())    
     
     
     
