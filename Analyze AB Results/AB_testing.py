@@ -99,7 +99,24 @@ df2 = df.drop(y)
 df2[((df2['group'] == 'treatment') == (df2['landing_page'] == 'new_page')) == False].shape[0]
 
     
-    
+    # `3.` Use **df2** and the cells below to answer questions for **Quiz3** in the classroom.
+
+# a. How many unique **user_id**s are in **df2**?
+
+# In[11]:
+
+len(df2['user_id'].unique())
+
+
+# b. There is one **user_id** repeated in **df2**.  What is it?
+
+# In[12]:
+
+df2[df2['user_id'].duplicated()]
+
+
+# d. Remove **one** of the rows with a duplicate **user_id**, but keep your dataframe as **df2**.
+
     
     
     
