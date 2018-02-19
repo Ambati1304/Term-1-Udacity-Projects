@@ -128,7 +128,18 @@ df2 = df2.drop(df2[df2['user_id'].duplicated()].index.get_values())
 # a. What is the probability of an individual converting regardless of the page they receive?
 
     
-    
+    # In[14]:
+
+len(df2[df2['converted'] == 1])/len(df2)
+
+
+# b. Given that an individual was in the `control` group, what is the probability they converted?
+
+# In[15]:
+
+p_con = len(df2[((df2['group'] == 'control') & (df2['converted'] == 1))])/len(df2[df2['group']=='control']) 
+p_con
+
     
     
     
