@@ -147,5 +147,10 @@ p_con
 p_trt = len(df2[((df2['group'] == 'treatment') & (df2['converted'] == 1))])/len(df2[df2['group']=='treatment']) 
 p_trt
 
-    
+    # d. What is the probability that an individual received the new page?
+
+# In[17]:
+
+len(df2[df2['landing_page'] == 'new_page'])/len(df2) 
+
     
