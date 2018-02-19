@@ -153,4 +153,9 @@ p_trt
 
 len(df2[df2['landing_page'] == 'new_page'])/len(df2) 
 
-    
+    # e. Use the results in the previous two portions of this question to suggest if you think there is evidence that one page leads to more conversions?  Write your response below.
+
+# ><b>`1.` We observe that the landing into either new page or old page are equally probable </b> <br/>
+# ><b>`2.` From the observations above we have evidence that given a particular group the probability for conversions are 0.1</b> <br/>
+# ><b>`3.` Looking at the analysis above, It would be better to make the experiment run little longer, or use a different statistical tool to analyse better </b> <br/>
+
