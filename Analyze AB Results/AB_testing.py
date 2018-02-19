@@ -140,6 +140,12 @@ len(df2[df2['converted'] == 1])/len(df2)
 p_con = len(df2[((df2['group'] == 'control') & (df2['converted'] == 1))])/len(df2[df2['group']=='control']) 
 p_con
 
-    
+    # c. Given that an individual was in the `treatment` group, what is the probability they converted?
+
+# In[16]:
+
+p_trt = len(df2[((df2['group'] == 'treatment') & (df2['converted'] == 1))])/len(df2[df2['group']=='treatment']) 
+p_trt
+
     
     
