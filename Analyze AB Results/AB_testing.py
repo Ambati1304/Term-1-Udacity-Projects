@@ -123,6 +123,10 @@ df2 = df2.drop(df2[df2['user_id'].duplicated()].index.get_values())
     
     
     
+# `4.` Use **df2** in the below cells to answer the quiz questions related to **Quiz 4** in the classroom.
+# 
+# a. What is the probability of an individual converting regardless of the page they receive?
+
     
     
     
