@@ -171,3 +171,5 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 # 
 # `1.` For now, consider you need to make the decision just based on all the data provided.  If you want to assume that the old page is better unless the new page proves to be definitely better at a Type I error rate of 5%, what should your null and alternative hypotheses be?  You can state your hypothesis in terms of words or in terms of **$p_{old}$** and **$p_{new}$**, which are the converted rates for the old and new pages.
 
+# <b>`1.` Null Hypothesis: </b> <br/>
+# > the difference in conversion rates for old page and new page will be zero, i.e. P(old) will be equal to P(new)
