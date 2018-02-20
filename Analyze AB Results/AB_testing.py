@@ -173,3 +173,7 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 
 # <b>`1.` Null Hypothesis: </b> <br/>
 # > the difference in conversion rates for old page and new page will be zero, i.e. P(old) will be equal to P(new)
+# 
+# <b>`2.` Alternative Hypothesis: </b> <br/>
+# > the difference in conversion rates for old page and new page will be different
+# 
