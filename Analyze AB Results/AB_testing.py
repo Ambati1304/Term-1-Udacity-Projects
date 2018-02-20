@@ -159,3 +159,13 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 # ><b>`2.` From the observations above we have evidence that given a particular group the probability for conversions are 0.1</b> <br/>
 # ><b>`3.` Looking at the analysis above, It would be better to make the experiment run little longer, or use a different statistical tool to analyse better </b> <br/>
 
+# <a id='ab_test'></a>
+# ### Part II - A/B Test
+# 
+# Notice that because of the time stamp associated with each event, you could technically run a hypothesis test continuously as each observation was observed.  
+# 
+# However, then the hard question is do you stop as soon as one page is considered significantly better than another or does it need to happen consistently for a certain amount of time?  How long do you run to render a decision that neither page is better than another?  
+# 
+# These questions are the difficult parts associated with A/B tests in general.  
+# 
+# 
