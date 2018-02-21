@@ -185,3 +185,15 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 # Perform the sampling distribution for the difference in **converted** between the two pages over 10,000 iterations of calculating an estimate from the null.  <br><br>
 # 
 # Use the cells below to provide the necessary parts of this simulation.  If this doesn't make complete sense right now, don't worry - you are going to work through the problems below to complete this problem.  You can use **Quiz 5** in the classroom to make sure you are on the right track.<br><br>
+# a. What is the **convert rate** for $p_{new}$ under the null? 
+
+# In[18]:
+
+p_new = len(df2[df2['converted'] == 1])/len(df2)
+p_new
+
+
+# In[19]:
+
+p_old = len(df2[df2['converted'] == 1])/len(df2)
+p_old
