@@ -183,3 +183,5 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 # Use a sample size for each page equal to the ones in **ab_data.csv**.  <br><br>
 # 
 # Perform the sampling distribution for the difference in **converted** between the two pages over 10,000 iterations of calculating an estimate from the null.  <br><br>
+# 
+# Use the cells below to provide the necessary parts of this simulation.  If this doesn't make complete sense right now, don't worry - you are going to work through the problems below to complete this problem.  You can use **Quiz 5** in the classroom to make sure you are on the right track.<br><br>
