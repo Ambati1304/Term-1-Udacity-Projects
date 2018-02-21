@@ -177,3 +177,6 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
 # <b>`2.` Alternative Hypothesis: </b> <br/>
 # > the difference in conversion rates for old page and new page will be different
 # 
+    
+# `2.` Assume under the null hypothesis, $p_{new}$ and $p_{old}$ both have "true" success rates equal to the **converted** success rate regardless of page - that is $p_{new}$ and $p_{old}$ are equal. Furthermore, assume they are equal to the **converted** rate in **ab_data.csv** regardless of the page. <br><br>
+# 
