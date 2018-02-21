@@ -180,3 +180,6 @@ len(df2[df2['landing_page'] == 'new_page'])/len(df2)
     
 # `2.` Assume under the null hypothesis, $p_{new}$ and $p_{old}$ both have "true" success rates equal to the **converted** success rate regardless of page - that is $p_{new}$ and $p_{old}$ are equal. Furthermore, assume they are equal to the **converted** rate in **ab_data.csv** regardless of the page. <br><br>
 # 
+# Use a sample size for each page equal to the ones in **ab_data.csv**.  <br><br>
+# 
+# Perform the sampling distribution for the difference in **converted** between the two pages over 10,000 iterations of calculating an estimate from the null.  <br><br>
