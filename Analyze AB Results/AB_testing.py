@@ -208,3 +208,9 @@ len(df2[df2['converted'] == 1])/len(df2)
 
 n_new = len(df2[df2['landing_page']=='new_page'])
 print(n_new)
+# d. What is $n_{old}$?
+
+# In[22]:
+
+n_old=len(df2[df2['landing_page']=='old_page'])
+n_old
