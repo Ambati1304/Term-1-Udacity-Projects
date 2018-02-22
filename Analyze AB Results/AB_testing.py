@@ -202,3 +202,9 @@ p_old
 # In[20]:
 
 len(df2[df2['converted'] == 1])/len(df2)
+# c. What is $n_{new}$?
+
+# In[21]:
+
+n_new = len(df2[df2['landing_page']=='new_page'])
+print(n_new)
