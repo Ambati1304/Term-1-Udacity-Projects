@@ -197,3 +197,8 @@ p_new
 
 p_old = len(df2[df2['converted'] == 1])/len(df2)
 p_old
+# b. What is the **convert rate** for $p_{old}$ under the null? <br><br>
+
+# In[20]:
+
+len(df2[df2['converted'] == 1])/len(df2)
