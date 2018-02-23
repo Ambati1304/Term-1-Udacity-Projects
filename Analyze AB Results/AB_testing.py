@@ -220,3 +220,10 @@ n_old
 # In[23]:
 
 new_page_converted = np.random.choice(2,n_new,p=[0.8804,0.1196])
+    
+    # f. Simulate $n_{old}$ transactions with a convert rate of $p_{old}$ under the null.  Store these $n_{old}$ 1's and 0's in **old_page_converted**.
+
+# In[24]:
+
+old_page_converted = np.random.choice(2,n_old,p=[0.8804,0.1196])
+
