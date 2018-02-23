@@ -214,3 +214,9 @@ print(n_new)
 
 n_old=len(df2[df2['landing_page']=='old_page'])
 n_old
+    
+    # e. Simulate $n_{new}$ transactions with a convert rate of $p_{new}$ under the null.  Store these $n_{new}$ 1's and 0's in **new_page_converted**.
+
+# In[23]:
+
+new_page_converted = np.random.choice(2,n_new,p=[0.8804,0.1196])
