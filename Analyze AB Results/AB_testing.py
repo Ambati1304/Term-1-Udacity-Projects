@@ -227,3 +227,11 @@ new_page_converted = np.random.choice(2,n_new,p=[0.8804,0.1196])
 
 old_page_converted = np.random.choice(2,n_old,p=[0.8804,0.1196])
 
+# g. Find $p_{new}$ - $p_{old}$ for your simulated values from part (e) and (f).
+
+# In[25]:
+
+p_new = np.count_nonzero(new_page_converted)/len(new_page_converted)
+p_old = np.count_nonzero(old_page_converted)/len(old_page_converted)
+a = p_new - p_old
+print("%.5f" % a)
