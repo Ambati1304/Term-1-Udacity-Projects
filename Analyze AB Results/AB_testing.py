@@ -246,3 +246,11 @@ for _ in range(10000):
     old_page_converted = np.random.choice([0,1],n_old,p=[0.8804,0.1196])
     p_old = np.count_nonzero(old_page_converted)/len(old_page_converted)
     p_diffs.append(p_new - p_old)
+    
+    # i. Plot a histogram of the **p_diffs**.  Does this plot look like what you expected?  Use the matching problem in the classroom to assure you fully understand what was computed here.
+
+# In[27]:
+
+p_diffs = np.array(p_diffs)
+plt.hist(p_diffs)
+
