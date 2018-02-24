@@ -235,3 +235,5 @@ p_new = np.count_nonzero(new_page_converted)/len(new_page_converted)
 p_old = np.count_nonzero(old_page_converted)/len(old_page_converted)
 a = p_new - p_old
 print("%.5f" % a)
+    
+    # h. Simulate 10,000 $p_{new}$ - $p_{old}$ values using this same process similarly to the one you calculated in parts **a. through g.** above.  Store all 10,000 values in **p_diffs**.
