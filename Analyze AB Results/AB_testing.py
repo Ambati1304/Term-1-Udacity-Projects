@@ -253,4 +253,14 @@ for _ in range(10000):
 
 p_diffs = np.array(p_diffs)
 plt.hist(p_diffs)
+    
+    # j. What proportion of the **p_diffs** are greater than the actual difference observed in **ab_data.csv**?
 
+# In[28]:
+
+p_diffs_actual =-0.1203 + 0.1188 
+greater_than_diff = [i for i in p_diffs if i > (p_diffs_actual)]
+print('Proportion greater than actual difference:', len(greater_than_diff)/len(p_diffs))
+
+
+    
