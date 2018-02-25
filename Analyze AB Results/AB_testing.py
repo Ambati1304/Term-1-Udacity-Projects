@@ -262,5 +262,13 @@ p_diffs_actual =-0.1203 + 0.1188
 greater_than_diff = [i for i in p_diffs if i > (p_diffs_actual)]
 print('Proportion greater than actual difference:', len(greater_than_diff)/len(p_diffs))
 
+# In[29]:
+
+n = p_diffs.mean()
+
+
+# In[37]:
+
+(p_diffs<p_diffs_actual).mean()+(p_diffs>p_diffs+(n-p_diffs_actual)).mean()
 
     
