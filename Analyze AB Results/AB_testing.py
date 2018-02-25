@@ -271,4 +271,7 @@ n = p_diffs.mean()
 
 (p_diffs<p_diffs_actual).mean()+(p_diffs>p_diffs+(n-p_diffs_actual)).mean()
 
-    
+    # k. In words, explain what you just computed in part **j.**.  What is this value called in scientific studies?  What does this value mean in terms of whether or not there is a difference between the new and old pages?
+
+# > we now have evidence, with the P-value caluclated above, that the difference in conversions in old page and new page are equal.i.e we may decide to run the experiment to run a little longer.
+
