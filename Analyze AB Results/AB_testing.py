@@ -275,3 +275,8 @@ n = p_diffs.mean()
 
 # > we now have evidence, with the P-value caluclated above, that the difference in conversions in old page and new page are equal.i.e we may decide to run the experiment to run a little longer.
 
+# l. We could also use a built-in to achieve similar results.  Though using the built-in might be easier to code,
+    #the above portions are a walkthrough of the ideas that are critical to correctly thinking about statistical significance. 
+    #Fill in the below to calculate the number of conversions for each page, as well as the number of individuals 
+  #  who received each page. 
+  #  Let `n_old` and `n_new` refer the the number of rows associated with the old page and new pages, respectively
