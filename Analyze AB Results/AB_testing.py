@@ -280,3 +280,14 @@ n = p_diffs.mean()
     #Fill in the below to calculate the number of conversions for each page, as well as the number of individuals 
   #  who received each page. 
   #  Let `n_old` and `n_new` refer the the number of rows associated with the old page and new pages, respectively
+    
+    # In[32]:
+
+import statsmodels.api as sm
+
+convert_old = len(df2[((df2['landing_page'] == 'old_page') & (df2['converted'] == 1))]) 
+convert_new = len(df2[((df2['landing_page'] == 'new_page') & (df2['converted'] == 1))])
+n_old = len(df2[df2['landing_page']=='old_page'])
+n_new = len(df2[df2['landing_page']=='new_page'])
+
+
