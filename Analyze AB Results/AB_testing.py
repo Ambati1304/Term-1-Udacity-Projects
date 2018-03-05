@@ -290,5 +290,12 @@ convert_new = len(df2[((df2['landing_page'] == 'new_page') & (df2['converted'] =
 n_old = len(df2[df2['landing_page']=='old_page'])
 n_new = len(df2[df2['landing_page']=='new_page'])
 
-    
+    # m. Now use `stats.proportions_ztest` to compute your test statistic and p-value.  [Here](http://knowledgetack.com/python/statsmodels/proportions_ztest/) is a helpful link on using the built in.
+
+# In[35]:
+
+z_score , p_value = sm.stats.proportions_ztest(np.array([convert_old,convert_new]),
+                                               np.array([n_old,n_new]),value=0.0 , alternative = 'larger')
+print('z-score = {} \n p_value = {}'.format(z_score , p_value))
+
 
