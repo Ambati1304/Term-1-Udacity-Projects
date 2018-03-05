@@ -290,4 +290,5 @@ convert_new = len(df2[((df2['landing_page'] == 'new_page') & (df2['converted'] =
 n_old = len(df2[df2['landing_page']=='old_page'])
 n_new = len(df2[df2['landing_page']=='new_page'])
 
+    
 
