@@ -308,3 +308,6 @@ print(norm.ppf(1-(0.05/2)))
 
 # n. What do the z-score and p-value you computed in the previous question mean for 
     #the conversion rates of the old and new pages?  Do they agree with the findings in parts **j.** and **k.**?
+# >Since the z-score of 0.0949 does not exceed the critical value of 1.959963984540054, 
+    #we keep the null hypothesis that the difference between the two proportions is no different
+    #from zero. Since they are not different, we may decide to keep the experiment to run longer
