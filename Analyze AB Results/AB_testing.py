@@ -298,4 +298,13 @@ z_score , p_value = sm.stats.proportions_ztest(np.array([convert_old,convert_new
                                                np.array([n_old,n_new]),value=0.0 , alternative = 'larger')
 print('z-score = {} \n p_value = {}'.format(z_score , p_value))
 
+# In[34]:
 
+from scipy.stats import norm
+
+print(norm.cdf(z_score))
+print(norm.ppf(1-(0.05/2)))
+
+
+# n. What do the z-score and p-value you computed in the previous question mean for 
+    #the conversion rates of the old and new pages?  Do they agree with the findings in parts **j.** and **k.**?
