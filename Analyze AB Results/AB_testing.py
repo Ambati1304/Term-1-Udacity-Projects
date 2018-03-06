@@ -311,3 +311,10 @@ print(norm.ppf(1-(0.05/2)))
 # >Since the z-score of 0.0949 does not exceed the critical value of 1.959963984540054, 
     #we keep the null hypothesis that the difference between the two proportions is no different
     #from zero. Since they are not different, we may decide to keep the experiment to run longer
+# <a id='regression'></a>
+# ### Part III - A regression approach
+# 
+# `1.` In this final part, you will see that the result you acheived in the previous A/B test can also be acheived by
+    #performing regression.<br><br>
+# 
+# a. Since each row is either a conversion or no conversion, what type of regression should you be performing in this case?
