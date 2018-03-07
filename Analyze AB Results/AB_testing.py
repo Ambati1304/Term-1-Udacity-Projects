@@ -318,3 +318,11 @@ print(norm.ppf(1-(0.05/2)))
     #performing regression.<br><br>
 # 
 # a. Since each row is either a conversion or no conversion, what type of regression should you be performing in this case?
+    # >Logistic Regression
+
+# b. The goal is to use **statsmodels** to fit the regression model you specified in part **a.** to see if there is a significant difference in conversion based on which page a customer receives.  However, you first need to create a colun for the intercept, and create a dummy variable column for which page each user received.  Add an **intercept** column, as well as an **ab_page** column, which is 1 when an individual receives the **treatment** and 0 if **control**.
+
+# In[40]:
+
+df2['intercept'] = 1
+df2['ab_page'] = np.where(df2['group'] =='control',0,1)
