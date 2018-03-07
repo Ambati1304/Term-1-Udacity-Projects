@@ -326,3 +326,11 @@ print(norm.ppf(1-(0.05/2)))
 
 df2['intercept'] = 1
 df2['ab_page'] = np.where(df2['group'] =='control',0,1)
+    
+    # c. Use **statsmodels** to import your regression model.  Instantiate the model, and fit the model using the two columns you created in part **b.** to predict whether or not an individual converts.
+
+# In[41]:
+
+lm = sm.Logit(df2['converted'],df2[['intercept','ab_page']])
+r = lm.fit()
+
